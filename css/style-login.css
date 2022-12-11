@@ -1,0 +1,189 @@
+a:active {color : red;}
+a:hover {background-color : yellow;}
+a:visited {color : purple;}
+header
+{
+    border: 5px solid chocolate;
+    background-color: darkorange;
+    padding: 0px 5px 5px 50px;
+    margin: 0px 5px 10px 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+main 
+{
+    margin: 5px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
+}
+article
+{
+    border: 5px solid rgb(210, 144, 96);
+    padding: 5px 5px 5px 5px;
+    border-radius: 50px;
+    background-color:antiquewhite;
+}
+footer
+{
+    border: 5px solid chocolate;
+    margin: 0px 5px 5px 5px;
+    background-color: chocolate;
+    padding: 0px 5px 0px 50px;
+    border-radius: 50px;
+}
+h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main > h3
+{
+    font-family:'Times New Roman', Times, serif;
+}
+.menu
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1
+{
+    font-family: 'Marck Script', cursive;
+}
+nav
+{
+    display: inline-block;
+    text-decoration:underline;
+}
+#favicon
+{
+    float: right;
+}
+.window
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 300px;
+    width: 550px;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0.5px); 
+}
+#reg
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#fa
+{
+    position: absolute;
+    margin: 5% 32%;
+}
+.myform
+{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 2em;
+    grid-template-areas:
+    "email pass"
+    "sub el";
+    place-items: center, center;
+}
+.title
+{
+    margin-left: 35%;
+}
+input
+{
+    transition: all, 0.3s;
+}
+input:focus
+{
+    background-color: aquamarine;
+    transform: scale(1.2);
+}
+button {
+    font-size: 1em;
+    background: #41f68c;
+    color: #fff;
+    border: 0.25rem solid #3be3d3;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  button:hover {
+    color: #3498db;
+  }
+  button[class^="grow"]::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  button[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  
+  button[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  
+  button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  
+  button.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  
+  button.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+  
+  button.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  #favicon1 {
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+  }    
+  @media (max-width: 800px){
+    header
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #favikon1
+    {
+        order: 1;
+        transform: scale(0.80);
+    }
+    .window
+    {
+        transform: scale(0.65);
+    }
+    h1{
+      font-size: medium;
+  }
+  }

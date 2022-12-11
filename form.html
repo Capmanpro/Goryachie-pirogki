@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gorachie pirogki</title>
+    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="./css/style-form.css">
+    <script src="./js/Untitled-form.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="favicon1"> <img id="favicon" src="./img/favicon.ico" alt="" width="100" height="100">
+            <nav class="menu">
+                <button id="but" class="grow_skew_forward"><a class="menu__item" href="index.html">Главная страница</a></button>
+            </nav>
+        </div>
+        <h1>Горячие пирожки</h1>
+    </header>
+    <main>
+        <article id="article">
+            <div>
+                <form action="" method="get">
+                    <div id="part1">
+                    <p>
+                        <label for="name">Введите имя:</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Введите email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="tel">Введите телефон:</label>
+                        <input type="tel" name="tel" id="tel"
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8(999)999-99-99"
+                            required>
+                    </p>
+                    <p>
+                        <label for="pass">Введите пароль:</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </p>
+                    <p>
+                        <label name="che">Готов стать пирожком:
+                            <input type="checkbox" name="che" required></label>
+                    </p>
+                    <p>
+                        <label name="date">Введите дату рождения:</label>
+                        <input type="datetime-local" name="date" min="2000-10-01T00:00" max="2000-10-31T23:59">
+                    </p>
+                    <p>
+                        <label name="anc">Приложите свой рецепт блинчиков:</label>
+                        <input type="file" name="anc">
+                    </p>
+                </div>
+                <div id="part2">
+                    <p>
+                    <fieldset>
+                        <legend>Выберите лучшее:</legend>
+                        <input type="radio" value="Пельмени" name="rad" id="rad1">
+                        <label id="rad1">Пельмени</label>
+                        <input type="radio" value="Пирожки" name="rad" id="rad2" checked>
+                        <label id="rad2">Пирожки</label>
+                        <input type="radio" value="Блинчики" name="rad" id="rad3">
+                        <label id="rad3">Блинчики</label>
+                    </fieldset>
+                    </p>
+                    <p>
+                        <label name="bio">Ваш статус:</label><br>
+                        <textarea id="bio" name="bio" rows="2" cols="25" placeholder="Пирожки люблю ... сильно"
+                            minlength="5" maxlength="50" required></textarea>
+                    </p>
+                    <p>
+                        <label for="pirogki">А теперь серьезно, какой лучше: </label><br>
+                        <select name="select" id="pirogki" multiple size="3" required>
+                            <option value="">-- Самый вкусный пирожок --</option>
+                            <option value="capusta">С капустой</option>
+                            <option value="tvorog">С творогом</option>
+                            <option value="miaso">С мясом</option>
+                            <option value="iayeco">С яйцом</option>
+                        </select>
+                    </p>
+                </form>
+                <div class="love">
+                    <h3>Нравится форма?</h3>
+                    <button class="click_me" id="id_1">Нравится</button>
+                    <button class="click_me" id="id_2">Не нравится</button>
+                    <script>
+                        document.addEventListener("click", function (e) {
+                            if_id = e.target.id;
+                            the_class = e.target.className;
+                            if (the_class == "click_me") {
+                                if_id = document.getElementById(if_id);
+                                if (if_id.style.background == "red") {
+                                    if_id.style.color = "black";
+                                    if_id.style.background = "white";
+                                }
+                                else {
+                                    var links = document.querySelectorAll(".click_me");
+                                    links.forEach(link => { link.setAttribute("style", "background:white"); })
+                                    if_id.style.background = "red";
+                                    if_id.style.color = "white";
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <br>
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        </article>
+    </main>
+    <footer>
+        <address>
+            </a>
+            <h2 id="Topic1">Контакты</h2>
+            <h3>
+                <pre><a href="mailto:olegnov2013@yandex.ru">Моя почта</a>
+<a href="tel:89154780417">Мой телефон</a></pre>
+            </h3>
+        </address>
+    </footer>
+</body>
+
+</html>

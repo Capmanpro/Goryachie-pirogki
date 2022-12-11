@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарный блог "Горячие пирожки"</title>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="favicon1">
+            <img id="favicon" src="./img/favicon.ico" alt="" width="100" height="100">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <il><button class="slide_from_top"><a class="menu__item" href="#News">Новости</a></button></li>
+                        <il><button class="slide_from_bottom"><a class="menu__item" href="#Recipes">Рецепты</a></button>
+                            </li>
+                            <il><button class="grow_box"><a class="menu__item" href="#Topic1">Контакты</a></button></li>
+                                <il><button class="grow_skew_forward"><a class="menu__item"
+                                            href="./login.html">Войти</a></button></il>
+            </div>
+        </div>
+        </ul>
+        <h1>Горячие пирожки</h1>
+    </header>
+    <main>
+        <article>
+            <aside id="aside">
+                <p id="intro" style="font-family: 'Marck Script', cursive;"><strong>Добро пожаловать на мой
+                        блог!</strong><br>
+                    Меня зовут Олег, я студент РТУ МИРЭА, но также у меня есть хобби - кулинария. Чтобы скрасить досуг
+                    таким же, как я и привлечь новых людей в гастрономический мир удовольствий я создал этот блог.
+                    Вы найдете здесь некоторые мои рецепты и новости мира кулинарии. <br>Приятного аппетита!
+                </p>
+            </aside>
+            <section>
+                <div class="dropdown">
+                    <div id="yved">
+                        <p id="nm">3</p>
+                    </div>
+                    <button id="yvedb" class="dropbtn">!</button>
+                    <div class="dropdown-content" id="drop">
+                        <li>У вас кончаются пирожки</li>
+                        <li>Очень важное уведомленине</li>
+                        <li>Зарегистрируйтесь на сайте</li>
+                    </div>
+                </div>
+                <script src="./js/drop-down.js"></script>
+                <h2 style="font-family: 'Marck Script', cursive;"><strong>Рецепты</strong></pre>
+                </h2>
+                <h3>
+                    <ol>
+                        <li><a class="reeeee" href="#blinmis">Блины</a></li>
+                        <ul>
+                            <li><a class="reeeee" href="#blinmis">С мясом</a></li>
+                            <li><a class="reeeee" href="#blinton">Тонкие</a></li>
+                        </ul>
+                        <li><a class="reeeee" href="#pirmis">Пироги</a></li>
+                        <ul>
+                            <li><a class="reeeee" href="#piryabl">С яблоком</a></li>
+                        </ul>
+                    </ol>
+                </h3>
+            </section>
+            <section id="News">
+                <h2 style="font-family: 'Marck Script', cursive;">Новости</h2>
+                <h3>
+                    <p>Французский багет внесен в список нематериального культурного наследия <abbr>ЮНЕСКО</abbr></p>
+                    <blockquote>"Новая строка в списке нематериального культурного наследия – мастерство и культура
+                        изготовления багета", – говорится в сообщении ЮНЕСКО в Twitter.</blockquote>
+                </h3>
+                <h3> Россияне Владимир Мухин, братья Иван и Сергей Березуцкие на этот раз не вошли в сотню лучших в
+                    мире.<br>
+                    В эксклюзивном интервью РИА Новости, сразу после церемонии награждения лауреатов в Мадриде, призеры
+                    2021 года премии THE BEST CHEF AWARDS, известный российский шеф и ресторатор Владимир Мухин заявил,
+                    что причиной стала международная обстановка.</h3>
+                <h3>
+                    <p></p><em>Гордон Рамзи</em> получил 100ю звезду <u>Мишлен</u> за идеальные сырники (<a
+                        href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BC%D0%B7%D0%B8,_%D0%93%D0%BE%D1%80%D0%B4%D0%BE%D0%BD"
+                        rel="external"> О поваре</a>)
+                    <blockquote>"Я удивлен" - сказал он.</blockquote>
+                </h3>
+            </section>
+            <section id="cards">
+                <div><img class="fa" src="./img/favicon.ico" alt="" width="100" height="100"></div>
+                <div id="card" class="card">
+                    <h2 class="titlecard">
+                        Блины
+                    </h2>
+                    <h3 class="textcard">
+                        Блюдо русской, немецкой, кавказской кухонь, выпекаемое из жидкого теста на сковороде.
+                    </h3>
+                </div>
+                <div id="card" class="card">
+                    <h2 class="titlecard">
+                        Пирог
+                    </h2>
+                    <h3 class="textcard">
+                        Это печеное или жареное блюдо из теста с начинкой.
+                    </h3>
+                </div>
+                <div id="card" class="card">
+                    <h2 class="titlecard">
+                        Пирожное
+                    </h2>
+                    <h3 class="textcard">
+                        Кондитерское изделие небольшого размера из сладкого сдобного теста, обычно с кремовой начинкой.
+                    </h3>
+                </div>
+            </section>
+            <section id="Recipes">
+                <h2
+                    style="font-family: 'Marck Script', cursive; display: flex;align-items: center;justify-content: center;">
+                    Рецепты блинов</h2>
+                <div id="blinmis">
+                    <h3>
+                        <p>Блиный с мясом</p>
+                        <ol class="spisokres" style="float: right;">
+                            <li> 2 яйца</li>
+                            <li>3 ст.л. сахара и масла</li>
+                            <li>700 мл молока</li>
+                            <li>грамм соды и соли</li>
+                            <li>1.5 ст.л. муки</li>
+                            <li>700 грамм фарша свинины с луком</li>
+                            <li>соль, специи по вкусу</li>
+                        </ol>
+                        Подготовьте необходимые ингредиенты.Можно приготовить фарш из любого вида мяса. Для
+                        приготовления блинного теста соедините в глубокой чаше яйца с сахаром.
+                        Затем влейте немного растительного масла и молоко. Все смешайте с помощью венчика. Затем
+                        добавьте в тесто просеянную муку и соду. Все ингредиенты хорошо перемешайте, чтобы тесто стало
+                        однородное, без комочков муки.
+                        На блинной сковороде напеките блины. Перед первым блином сковороду немного смажьте растительным
+                        маслом. Сковороду разогрейте до горячего состояния, налейте немного растительного масла и
+                        выложите подготовленный фарш. Обжаривайте фарш в течение 3-5 минут.
+                        Затем добавьте нарезанный лук в сковороду к фаршу. Все хорошо перемешайте, сделайте огонь
+                        немного меньше и обжаривайте все вместе еще минут 15.
+                        На одну сторону готового блинчика выкладывайте 1-2 столовых ложки мясной начинки. На одну
+                        сторону готового блинчика выкладывайте 1-2 столовых ложки мясной начинки.
+                    </h3>
+                </div>
+                <p></p>
+                <div id="blinton">
+                    <h3>
+                        <p>Блиный тонкие</p>
+                        <ol class="spisokres" style="float: right;">
+                            <li> 3 яйца</li>
+                            <li>2 ст.л. сахара и масла</li>
+                            <li>500 мл молока</li>
+                            <li>грамм соды и соли</li>
+                            <li>200 грамм муки</li>
+                        </ol>
+                        Подготовим все ингредиенты. Яйца хорошо моем, выбиваем в ёмкость для взбивания, добавляем сахар
+                        и соль. Перемешиваем до однородности миксером, венчиком или просто вилкой.
+                        Здесь у нас нет необходимости взбить яйца в пену, нужно лишь перемешать до однородного состояния
+                        и полного растворения соли и сахара.
+                        Добавляем к яичной массе небольшую часть молока, где-то 100-150 мл. Мы не наливаем всё молоко
+                        сразу, потому что, при добавлении муки, более густое тесто проще перемешать до однородного
+                        состояния.
+                        Перемешиваем тесто. Сейчас оно довольно густое, и должно перемешаться до гладкого однородного
+                        состояния, без комочков.
+                        Наливаем тесто на раскалённую сковородку и одновременно вращаем её по кругу так, что бы тесто
+                        покрыло дно ровным тонким слоем.
+                        Сразу появились дырочки на блине, это потому что сковородка очень горячая.
+                        Обжарьте блин со второй стороны. Приподнимайте край лопаткой и смотрите, чтобы он не подгорел
+                        снизу. Когда блинчик снизу станет румяным, снимаем его со сковороды.
+                    </h3>
+                </div>
+                <p></p>
+                <section id="pcs">
+                    <a class="tures" href="#" title=""
+                        alt="Это не блины, а американские пэнкейки (по вкусу невкусно, но по сути вкусно)"><img
+                            id="pic1" src="./img/pic1.jpg" width="300" height="300"></a>
+                    <a class="tures" href="#" title="" alt="Эти блины тоже не идеал..."><img id="pic2"
+                            src="./img/pic2.jpg" width="300" height="300"></a>
+                    <a class="tures" href="#" title="" alt="Бабушкины блины узнаю из тысячи!"><img id="pic3"
+                            src="./img/pic3.jpg" width="300" height="300"></a>
+                </section>
+                <h2
+                    style="font-family: 'Marck Script', cursive; display: flex;align-items: center;justify-content: center;">
+                    Рецепты пирогов</h2>
+                <div id="piryabl">
+                    <h3>
+                        <p>Пирожки с яблоком</p>
+                        <ol class="spisokres" style="float: right;">
+                            <li>2 яйца</li>
+                            <li>1.5 ст.л. сахара</li>
+                            <li>стакан молока</li>
+                            <li>грамм соды и соли</li>
+                            <li>3 стакана муки</li>
+                            <li>0.25 ст.л. соли</li>
+                            <li>10 грамм дрожжей</li>
+                            <li>для начинки: 4 яблока и 50 грамм масла</li>
+                        </ol>
+                        Сначала моем и режем яблоки, удалив сердцевину. Затем растапливаем на сковороде сливочное масло,
+                        после чего добавляем сахар, перемешиваем все и кладем яблочки.
+                        Уменьшив максимально огонь, провариваем яблоки примерно 5-7 минут.
+                        Затем снимаем массу с огня и даем ей остыть. Просеиваем в миску 2/3 муки, всыпаем соль с
+                        сахаром, вбиваем яйца. Делаем в отдельной емкости опару из теплого молока, дрожжей и сахара и
+                        ставим ее в теплое место. Забродившие дрожжи (примерно через 15 минут) отправляем к муке и
+                        хорошо вымешиваем тесто.На этом этапе можно добавить оставшуюся треть муки. Учтите, что муки
+                        может уйти чуть больше или меньше, чем указано в рецепте.Поставьте тесто в теплое место для
+                        того, чтобы оно поднялось. Как только оно увеличится в 2-3 раза в объеме, вымешиваем снова. И
+                        эту процедуру повторяем еще пару раз, а потом снова хорошо его вымешиваем. Тесто делим на равные
+                        кусочки. Каждый кусочек раскатываем скалкой или разминаем руками в лепешку, даем им немного
+                        подняться. Кладем в центр каждой лепешки яблочную начинку и, соединив края, формируем пирожок.
+                        Выкладываем готовые пирожки на смазанный маслом противень и даем им немного подняться.После
+                        увеличения в размере смазываем пирожки яичным желтком. Пускай пекутся теперь в предварительно
+                        нагретой до 200-от градусов духовке. Печем где-то полчаса.
+                    </h3>
+                </div>
+            </section>
+            <div id="gal2">
+                <p>
+                <h2
+                    style="font-family: 'Marck Script', cursive; display: flex;align-items: center;justify-content: center;">
+                    Галерея</h2>
+                <p></p>
+                <h3>Ниже представлена галерея некоторых сделанных мною блюд!</h3>
+                </p>
+            </div>
+            <div class="galery">
+                <figure class="img1">
+                    <img src="./img/img1.webp" alt="">
+                </figure>
+                <figure class="img2">
+                    <img src="./img/img2.webp" alt="">
+                </figure>
+                <figure class="img3">
+                    <img src="./img/img3.webp" alt="">
+                </figure>
+                <figure class="img4">
+                    <img src="./img/img4.webp" alt="">
+                </figure>
+                <figure class="img5">
+                    <img src="./img/img5.webp" alt="">
+                </figure>
+                <figure class="img7">
+                    <img src="./img/img7.webp" alt="">
+                </figure>
+            </div>
+            <script>
+                let tim = setInterval(function () {
+                    if (window.innerWidth < 750) {
+                        document.querySelector(".galery").remove()
+                        document.querySelector("#gal2").remove();;
+                        clearInterval(tim);
+                    }
+                }, 5000);
+            </script>
+            <script src="./js/notification.js"></script>
+        </article>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js"></script>
+        <script src="./js/slice.js"></script>
+    </main>
+    <footer>
+        <address>
+            <h2 id="Topic1">Контакты</h2>
+            <span id="cont">
+                <h3>
+                    <pre><a href="mailto:olegnov2013@yandex.ru">Моя почта</a>
+<a href="tel:89154780417">Мой телефон</a></pre>
+                </h3>
+            </span>
+            <div class="grups">
+                <button class="gr"><a href=""></a>Facebook</button>
+                <button class="gr"><a href=""></a>YouTube</button>
+                <button class="gr"><a href=""></a>Vkontakte</button>
+                <button class="gr"><a href=""></a>Instagram</button>
+                <button class="gr"><a href=""></a>Telegram</button>
+            </div>
+        </address>
+    </footer>
+</body>
+
+</html>
